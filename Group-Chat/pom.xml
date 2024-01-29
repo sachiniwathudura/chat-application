@@ -13,6 +13,7 @@
         <module>Client1</module>
         <module>Client2</module>
         <module>Server</module>
+        <module>Client3</module>
     </modules>
 
     <properties>
