@@ -18,7 +18,7 @@
             <Image url="@../assets/login.png" />
          </image>
       </ImageView>
-      <TextField layoutX="88.0" layoutY="254.0" prefHeight="41.0" prefWidth="293.0" style="-fx-border-color: blue; -fx-border-width: 2;" />
+      <TextField fx:id="txtJoin" layoutX="88.0" layoutY="254.0" onAction="#txtJoinOnAction" prefHeight="41.0" prefWidth="293.0" style="-fx-border-color: blue; -fx-border-width: 2;" />
       <Button layoutX="311.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnJoinOnAction" prefHeight="20.0" prefWidth="69.0" style="-fx-background-color: #192a56;" text="Join" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
          <font>
             <Font size="21.0" />
@@ -34,7 +34,7 @@
          </effect></Button>
       <Label layoutX="116.0" layoutY="32.0" prefHeight="26.0" prefWidth="224.0" text="Create your chat" textFill="#0c2f8d">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="System Bold" size="26.0" />
          </font>
       </Label>
       <Label layoutX="74.0" layoutY="218.0" text="Enter your name :">

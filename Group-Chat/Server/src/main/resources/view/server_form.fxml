@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ServerController">
+   <children>
+      <TextArea fx:id="txtMassageArea" layoutX="14.0" layoutY="68.0" prefHeight="318.0" prefWidth="571.0" />
+      <Label layoutX="162.0" layoutY="23.0" prefHeight="18.0" prefWidth="218.0" text="Searver">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTypeMsg" layoutX="14.0" layoutY="394.0" prefHeight="38.0" prefWidth="394.0" />
+      <Button layoutX="450.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="25.0" prefWidth="135.0" text="send" />
+   </children>
+</AnchorPane>
