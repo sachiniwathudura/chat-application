@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="544.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Client1ChatFromController">
+   <children>
+      <Text fx:id="lblName" layoutX="228.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="328.53672790527344">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="228.0" layoutY="85.0" prefHeight="338.0" prefWidth="361.0">
+         <content>
+            <VBox fx:id="mainVbox" prefHeight="325.0" prefWidth="362.0" style="-fx-background-color: black;" />
+         </content>
+      </ScrollPane>
+      <TextField fx:id="sendTxtAreaClient" layoutX="255.0" layoutY="471.0" onAction="#txtFieldClientOnAction" prefHeight="46.0" prefWidth="238.0" />
+      <Button fx:id="btnSendClient" layoutX="523.0" layoutY="470.0" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="38.0" prefWidth="62.0" style="-fx-background-color: black;" text="Send" textFill="#ece3e3" />
+      <ImageView fx:id="emoIcon" fitHeight="38.0" fitWidth="38.0" layoutX="149.0" layoutY="477.0" onMouseClicked="#emoIconOnAction" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/chatt-app%20(2)/chatt-app/Client1/src/main/resources/icon/img.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="spaneForFlowPane" layoutX="17.0" layoutY="204.0" prefHeight="250.0" prefWidth="200.0">
+         <content>
+            <FlowPane fx:id="emojiContainer" prefHeight="254.0" prefWidth="200.0" style="-fx-background-color: white;" />
+         </content>
+      </ScrollPane>
+      <FlowPane fx:id="emojiCategoryPane" layoutX="17.0" layoutY="157.0" prefHeight="46.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <ImageView fx:id="icnCamera" fitHeight="41.0" fitWidth="58.0" layoutX="196.0" layoutY="475.0" onMouseClicked="#icnCameraOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/chatt-app%20(2)/chatt-app/Client1/src/main/resources/icon/img_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
