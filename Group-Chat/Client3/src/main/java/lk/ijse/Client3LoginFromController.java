@@ -22,7 +22,7 @@ public class Client3LoginFromController {
         txtUserName.clear();
 
         Stage stage = new Stage();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Client2ChatFrom.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Client3Chat.fxml"))));
         stage.setTitle("Chat Room");
         stage.show();
     }
