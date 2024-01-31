@@ -4,18 +4,28 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ServerController">
+<AnchorPane prefHeight="445.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ServerController">
    <children>
-      <TextArea fx:id="txtMassageArea" layoutX="14.0" layoutY="68.0" prefHeight="318.0" prefWidth="571.0" />
-      <Label layoutX="162.0" layoutY="23.0" prefHeight="18.0" prefWidth="218.0" text="Searver">
+      <ImageView fitHeight="450.0" fitWidth="604.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/vector-isometric-concept-data-analysis-network-mainframe-infrastructure-website-layout-technician-datacenter-data-center-room-background-computer-stora.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="txtMassageArea" layoutX="14.0" layoutY="68.0" opacity="0.56" prefHeight="318.0" prefWidth="571.0">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="System Bold" size="16.0" />
+         </font></TextArea>
+      <Label layoutX="162.0" layoutY="23.0" prefHeight="18.0" prefWidth="218.0" text="Server" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <TextField fx:id="txtTypeMsg" layoutX="14.0" layoutY="394.0" prefHeight="38.0" prefWidth="394.0" />
-      <Button layoutX="450.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="25.0" prefWidth="135.0" text="send" />
+      <TextField fx:id="txtTypeMsg" layoutX="14.0" layoutY="394.0" prefHeight="38.0" prefWidth="427.0" />
+      <Button layoutX="449.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="38.0" prefWidth="135.0" text="send" />
    </children>
 </AnchorPane>
